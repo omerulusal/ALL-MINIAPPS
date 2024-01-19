@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Lorem",
+        "image": "img/1.jpg",
+        "price": 40
+    },
+    {
+        "name": "Lorem Ipsum",
+        "image": "img/2.jpg",
+        "price": 70
+    },
+    {
+        "name": "Lorem Ipsum dolor",
+        "image": "img/3.jpg",
+        "price": 90
+    },
+    {
+        "name": "Lorem",
+        "image": "img/4.jpg",
+        "price": 95
+    },
+    {
+        "name": "dolor sit",
+        "image": "img/5.jpg",
+        "price": 100
+    },
+    {
+        "name": "Lorem sit amet",
+        "image": "img/6.jpg",
+        "price": 120
+    }
+]

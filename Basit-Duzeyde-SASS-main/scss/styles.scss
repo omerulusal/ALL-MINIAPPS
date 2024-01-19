@@ -1,0 +1,125 @@
+@import "reset.scss";
+@import "degisken.scss";
+@import "mixin.scss";
+
+body {
+    background-color: $renk-1;
+}
+
+.nav-bar {
+    text-align: center;
+    color: $renk-1;
+    display: inline-block;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    width: 100%;
+    @include clearF;
+
+    li {
+        display: inline-block;
+        padding: $boy-2;
+        border-radius: 10px;
+
+        a {
+            color: black;
+        }
+    }
+}
+
+ul li a:hover {
+    color: $renk-3;
+}
+
+.top-banner {
+    @include afis();
+
+    @include medya(600px) {
+        span {
+            font-size: $boy-2;
+        }
+    }
+}
+
+.nav-bar ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.alt-banner {
+    @include afis();
+
+    span {
+        text-align: right;
+        padding-top: $boy-4;
+        line-height: 0px;
+        padding-right: $boy-4;
+        width: 90%;
+    }
+}
+
+#services {
+    background-color: $renk-2;
+    text-align: center;
+
+    ul {
+        width: 100%;
+        @include clearF;
+    }
+
+    li {
+        margin-bottom: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        width: 30%;
+
+        img {
+            width: 100%;
+            margin: 10px;
+            padding-bottom: 10px;
+        }
+
+        a {
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover {
+                color: $renk-3;
+            }
+        }
+    }
+
+    font-size: $boy-4;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+
+#projects {
+    text-align: center;
+    background-color: $renk-4;
+    @include clearF;
+
+    @include medya(600px, 1000px) {
+        li {
+            @include ızgara(1, 5%);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
