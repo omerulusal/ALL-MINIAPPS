@@ -1,0 +1,376 @@
+:root {
+    --anarenk: #dd6f6e
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    padding: 0;
+}
+
+body {
+    background-color: #1F6E8C;
+    color: rgba(245, 245, 245, 0.703);
+}
+
+a,
+a::before,
+a::after {
+    color: black;
+}
+
+.burger {
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    flex: 9999;
+    font-size: 40px;
+
+}
+
+.sidebar {
+    width: 345px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    min-height: 100vh;
+    /* background-color: #2E8A99; */
+}
+
+.side-active {
+    background-color: #2E8A99;
+    align-items: center;
+    padding-top: 1.5rem;
+    margin-left: -10px;
+    padding-left: 10px;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+
+.sidebar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .8px;
+    transition: all .3s ease;
+}
+
+.sidebar-menu {
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.sidebar-menu span {
+    padding-left: 1rem;
+}
+
+.sidebar-menu ul li {
+    padding-bottom: 2rem;
+}
+
+
+.main-content {
+    margin-left: 340px;
+    padding: 0;
+    margin-top: -1rem;
+    margin-left: 21rem;
+}
+
+.yapi {
+    display: block;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgba(245, 245, 245, 0.703);
+    background-color: transparent;
+}
+
+.search-wrapper {
+    border: 1px solid rgba(245, 245, 245, 0.703);
+    border-radius: 1rem;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+
+    ::placeholder {
+        color: rgba(245, 245, 245, 0.703);
+    }
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.user-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-auth {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    line-height: 1px;
+    margin-left: .5rem;
+}
+
+.text-auth small {
+    margin-left: 2.5rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-single {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    font-size: xx-large;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: transform .7s ease-in-out;
+    cursor: pointer;
+}
+
+.card-single:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px rgba(255, 7, 7, 0.1);
+    background-color: #2E8A99;
+    border-radius: 1rem;
+
+}
+
+.card-single .tops {
+    display: block;
+    font-size: x-large;
+    padding-left: 1rem;
+}
+
+.recent {
+    margin-top: 2rem;
+    margin-left: 22rem;
+    width: 60rem;
+    background-color: #2888ae1f;
+    border-radius: 1rem;
+    padding: 0rem 2rem;
+}
+
+.recent-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    align-items: center;
+}
+
+.recent-top button {
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    background-color: #3bafc1;
+    transition: background-color .3s ease-in;
+}
+
+.recent-top button:hover {
+    background-color: rgb(66, 216, 239);
+}
+
+hr {
+    width: 50rem;
+    border: .1px solid black;
+    margin-bottom: 1.5rem;
+    left: 0;
+}
+
+thead {
+    text-align: left;
+
+}
+
+thead tr th {
+    padding: 0rem 3rem 0rem 0rem;
+}
+
+thead th {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+tbody tr td {
+    padding: 0rem 5rem 0rem 0rem;
+    font-size: x-large;
+    line-height: 3.5rem;
+    opacity: .8;
+}
+
+tbody tr td span {
+    margin-right: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+
+
+
+
+/* Customer Component */
+.customer {
+    background-color: #2888ae1f;
+    border-radius: 1rem;
+    width: max-content;
+    width: 40rem;
+    height: auto;
+    margin-left: 77.5rem;
+    margin-top: -34rem;
+}
+
+.customer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+}
+
+.cust-hr {
+    height: .6px;
+    width: 38rem;
+}
+
+.customer-top button {
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    background-color: #3bafc1;
+    transition: background-color .3s ease-in;
+}
+
+.customer-top button:hover {
+    background-color: rgb(66, 216, 239);
+}
+
+
+
+
+.customer-body {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem .5rem;
+}
+
+.cust-person {
+    display: inline;
+    width: 20rem;
+    align-items: center;
+    line-height: .3rem;
+}
+
+.cust-img {
+    display: inline;
+    width: 8rem;
+
+}
+
+.cust-person span {
+    color: rgba(245, 245, 245, 0.576);
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.custs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -.2rem;
+}
+
+.kapsam {
+    width: max-content;
+}
+
+
+
+
+
+
+/* JS */
+
+.burgerinactive span {
+    display: none;
+}
+
+.sidebar .burgerinactive {
+    width: 10rem;
+}
+
+.burgerinactive .side-active {
+    align-items: center;
+    padding-top: 1.5rem;
+    margin-left: -10px;
+    padding-left: 10px;
+    width: 3rem;
+}
+
+.burgerinactive .sidebar-brand {
+    display: none;
+}
+
+.burgerinactive .sidebar-menu {
+    margin-top: 11.5rem;
+    transition: all .3s ease-in-out;
+}
+
+
+.burgerinactive .yapi {
+    margin-left: 3rem;
+}
+
+.burgerinactive header label {
+    margin-left: 3rem;
+}
+.burgerinactive header button{
+    margin: 0rem 1rem;
+    width: 15rem;
+}
