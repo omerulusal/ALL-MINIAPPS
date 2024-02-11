@@ -55,7 +55,6 @@ app.MapGet("/get-post/{id}", async (int id) =>
 }).WithTags("Posts Endpoints");
 
 
-
 app.MapPost("/create-post", async (Post post) =>
 {
     bool olusturmaBasarili = await PostRepository.CreatePostAsync(post);

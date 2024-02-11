@@ -1,13 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 namespace aspnetserver.Data;
 
-internal sealed class AppDBContext : DbContext
+internal sealed class AppDBContext : DbContext //DbContext:Veritabanı ile iletişim kurmayı sağlar.
 {
     public DbSet<Post> Posts { get; set; }
+    //DbSet CRUD işlemlerini sağlar. <Post> Dbde kullanacagım Modeldir.
     protected override void OnConfiguring(DbContextOptionsBuilder DbContextOptionsBuilder) => DbContextOptionsBuilder.UseSqlite("Data Source=./Data/AppDB.db");
+    //DB Baglantısı SQLite kullanılarak oluşturulde ve .db dosyasının kayıt yeri belirtildi
     protected override void OnModelCreating(ModelBuilder ModelBuilder)
+    // DB modelinin oluşturulma kodu
     {
-        Post[] postToSeed = new Post[6];
+        Post[] postToSeed = new Post[6];//postToSeed, Post Tipinde dizidir ve 6 elemanlı olucak
         for (int i = 1; i <= 6; i++)
         {
             postToSeed[i - 1] = new Post
@@ -19,6 +22,7 @@ internal sealed class AppDBContext : DbContext
             };
         }
         ModelBuilder.Entity<Post>().HasData(postToSeed);
+        //DB Modeli Post.cs teki Modelden oluşacak verilerde postToSeed dizisinden gelicek
     }
 }
 
