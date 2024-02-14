@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\estrore.props" />
+</Project>
