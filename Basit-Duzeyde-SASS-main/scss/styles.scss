@@ -44,6 +44,14 @@ ul li a:hover {
         }
     }
 }
+/* 
+Ornek Kullanımı
+@media screen and (max-width: 600px) {
+    .top-banner span{
+        font-size:20px
+    }
+}
+*/ 
 
 .nav-bar ul::after {
     content: "";

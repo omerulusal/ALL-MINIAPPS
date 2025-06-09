@@ -1,28 +1,41 @@
 @mixin medya($args...) {
-    @if length($args)==1 {
+    @if length($args) ==1 {
+        // Sadece bir parametre verilirse calısır.
         @media screen and (max-width: nth($args, 1)) {
+            // nth($args, 1) ilk parametreyi alır.
             @content;
         }
     }
 }
+// $args... birden fazla arguman alabileceini belirtir.
 
-
-@mixin ızgara($cols, $margin) {
+@mixin ızgara($cols, $margin, $args...) {
     float: left;
     margin-right: $margin;
     margin-bottom: $margin;
 
     &:nth-child(#{$cols}n) {
+        // #{$cols}n css te cols'ta gelen degeri string yapar. orn:"1n"(ilk cocuk eleman)
         margin-right: 0;
     }
 
-    @if length($args)==2 {
-        @media screen and (min-width: nth($args, 1)) and (max-width:nth($args, 2)) {
+    @if length($args) ==2 {
+        @media screen and (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
             @content;
         }
     }
 }
-
+@mixin modern_izgara($col, $gap) {
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+    gap: $gap;
+}
+/*
+Modern Izgara Ornek Kullanımı
+.cotainer {
+    @include modern_izgara(3,20px);
+}
+*/
 
 @mixin afis {
     width: 100%;
