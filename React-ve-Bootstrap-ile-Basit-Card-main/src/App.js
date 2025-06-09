@@ -1,5 +1,5 @@
-import React from "react";
-import Card from "./components/card";
+import React, { lazy, Suspense } from "react";
+const LazyCard = lazy(() => import("./components/card"));
 function App() {
   const yazi = [
     "Köpekler, evcil hayvan olarak insanlar tarafından sevilen ve yetiştirilen bir tür canlıdır. Köpekler, insanlarla yaklaşık 15.000 yıldır birlikte yaşamaktadır. Köpekler, insanlar için çeşitli amaçlar için kullanılır, örneğin avcılık, koruma, arama ve kurtarma, rehberlik. ",
@@ -22,22 +22,34 @@ function App() {
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-4 my-2">
-          <Card title="Dog" text={yazi[0]} resim={pics[0]} />
+          <Suspense fallback={<div>Yukleniyor...</div>}>
+            <LazyCard title="Dog" text={yazi[0]} resim={pics[0]} />
+          </Suspense>
         </div>
         <div className="col-md-4 my-2">
-          <Card title="Cat" text={yazi[1]} resim={pics[1]} />
+          <Suspense fallback={<div>Yukleniyor...</div>}>
+            <LazyCard title="Cat" text={yazi[1]} resim={pics[1]} />
+          </Suspense>
         </div>
         <div className="col-md-4 my-2">
-          <Card title="Bird" text={yazi[2]} resim={pics[2]} />
+          <Suspense fallback={<div>Yukleniyor...</div>}>
+            <LazyCard title="Bird" text={yazi[2]} resim={pics[2]} />
+          </Suspense>
         </div>
         <div className="col-md-4 my-2">
-          <Card title="Horse" text={yazi[3]} resim={pics[3]} />
+          <Suspense fallback={<div>Yukleniyor...</div>}>
+            <LazyCard title="Horse" text={yazi[3]} resim={pics[3]} />
+          </Suspense>
         </div>
         <div className="col-md-4 my-2">
-          <Card title="Zebra" text={yazi[4]} resim={pics[4]} />
+          <Suspense fallback={<div>Yukleniyor...</div>}>
+            <LazyCard title="Zebra" text={yazi[4]} resim={pics[4]} />
+          </Suspense>
         </div>
         <div className="col-md-4 my-2">
-          <Card title="Monkey" text={yazi[5]} resim={pics[5]} />
+          <Suspense fallback={<div>Yukleniyor...</div>}>
+            <LazyCard title="Monkey" text={yazi[5]} resim={pics[5]} />
+          </Suspense>
         </div>
       </div>
     </div>
