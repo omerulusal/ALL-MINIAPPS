@@ -21,32 +21,32 @@ function App() {
 
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-4 my-2">
+        <div className="col-md-4 col-md-4 col-lg-3 mb-4 d-flex my-2">
           <Suspense fallback={<div>Yukleniyor...</div>}>
             <LazyCard title="Dog" text={yazi[0]} resim={pics[0]} />
           </Suspense>
         </div>
-        <div className="col-md-4 my-2">
+        <div className="col-md-4 col-md-4 col-lg-3 mb-4 d-flex my-2 my-2">
           <Suspense fallback={<div>Yukleniyor...</div>}>
             <LazyCard title="Cat" text={yazi[1]} resim={pics[1]} />
           </Suspense>
         </div>
-        <div className="col-md-4 my-2">
+        <div className="col-md-4 col-md-4 col-lg-3 mb-4 d-flex my-2 my-2">
           <Suspense fallback={<div>Yukleniyor...</div>}>
             <LazyCard title="Bird" text={yazi[2]} resim={pics[2]} />
           </Suspense>
         </div>
-        <div className="col-md-4 my-2">
+        <div className="col-md-4 col-md-4 col-lg-3 mb-4 d-flex my-2 my-2">
           <Suspense fallback={<div>Yukleniyor...</div>}>
             <LazyCard title="Horse" text={yazi[3]} resim={pics[3]} />
           </Suspense>
         </div>
-        <div className="col-md-4 my-2">
+        <div className="col-md-4 col-md-4 col-lg-3 mb-4 d-flex my-2 my-2">
           <Suspense fallback={<div>Yukleniyor...</div>}>
             <LazyCard title="Zebra" text={yazi[4]} resim={pics[4]} />
           </Suspense>
         </div>
-        <div className="col-md-4 my-2">
+        <div className="col-md-4 col-md-4 col-lg-3 mb-4 d-flex my-2 my-2">
           <Suspense fallback={<div>Yukleniyor...</div>}>
             <LazyCard title="Monkey" text={yazi[5]} resim={pics[5]} />
           </Suspense>
