@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Data from "./Data.json"
 
+const placeholder = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlnDvGtsZW5peW9yLi4uPC90ZXh0Pjwvc3ZnPg=="
 
 function App() {
   const [terimAra, setTerimAra] = useState("");
@@ -24,6 +27,7 @@ function App() {
             Data.filter((veri) => {
               if (terimAra == "") {
                 return veri;
+                
               } else if (veri.title.toLocaleLowerCase().includes(terimAra.toLocaleLowerCase())) {
                 return veri;
               }
@@ -32,7 +36,13 @@ function App() {
                 <div className="Veri" key={veri.id}>
                   {/* veriler arası karışıklık olmaması için id şarttır. */}
                   <div className="col-md">
-                    <img src={veri.link} alt="pics" className="img-fluid rounded shadow-lg" />
+                    <LazyLoadImage
+                      src={veri.link}
+                      alt={veri.title}
+                      effect="blur"
+                      className="img-fluid rounded shadow-lg"
+                      placeholderSrc={placeholder}
+                    />
                   </div>
                   <div className="text-white text-center mt-3">
                     <h3>{veri.title}</h3>
