@@ -67,27 +67,27 @@ const LoginPage = () => {
 
 
                     {/* ==============================>Giris<============================== */}
-                    <label htmlFor="user" className='form-label lead' id='label-user'>Username:</label>
-                    <input type="text" id='user' value={user} onChange={handleuser} className="form-control w-25 d-inline user" placeholder="Enter your username!" />
+                    <label htmlFor="user" className='form-label lead lblSm' id='label-user'>Username:</label>
+                    <input type="text" id='user' value={user} onChange={handleuser} className="form-control w-25 d-inline user inptsm" placeholder="Enter your username!" />
                     <div className="password">
-                        <label htmlFor="pass" className='form-label lead' id='label-pass'>Password:</label>
-                        <input type="password" id='pass' onChange={handlepass} className="form-control w-25 d-inline password user" placeholder="Enter your password!" />
+                        <label htmlFor="pass" className='form-label lead lblSm' id='label-pass'>Password:</label>
+                        <input type="password" id='pass' onChange={handlepass} className="form-control w-25 d-inline password user inptsm" placeholder="Enter your password!" />
                     </div>
 
 
                     <div className="check">
-                        <input type="checkbox" className='form-check-input' id="check" />
-                        <label htmlFor="check" className='form-check-label ms-2 text-capitalize text-dark' id='label'>Remember Me</label>
+                        <input type="checkbox" className='form-check-input chckbxsm' id="check" />
+                        <label htmlFor="check" className='form-check-label ms-2 text-capitalize text-dark lblSm' id='label'>Remember Me</label>
                     </div>
 
 
-                    <button type='submit' className='btn m-auto btn-dark' onClick={handlebtn}>Login</button>
+                    <button type='submit' className='btn m-auto btn-dark btnsm-device' onClick={handlebtn}>Login</button>
 
 
 
                     {/* ==============================>Linkler<============================== */}
-                    <div className="log-alternative mt-4 w-w-100 m-auto d-flex justify-content-center align-items-center">
-                        <ul className='list-group-item d-flex bg-transparent  w-100 '>
+                    <div className="log-alternative mt-4 w-w-100 m-auto d-flex justify-content-center align-items-center link_sm_device">
+                        <ul className='list-group-item d-flex bg-transparent  w-100 ul_sm_device '>
                             <li className='list-group-item list-inline-item w-25 bg-transparent border-none'>
                                 <a href="#" className='text-decoration-none link-dark' onClick={openWindow} >Contiune with Google <FaGoogle color='gold' /> </a>
                             </li>
@@ -102,7 +102,7 @@ const LoginPage = () => {
                             </li>
                         </ul>
                     </div>
-                    <a className='d-flex justify-content-center align-items-center text-decoration-none link-dark' id='acco' href="#">Create Account</a>
+                    <a className='d-flex justify-content-center align-items-center text-decoration-none link-dark sm_anchor' id='acco' href="#">Create Account</a>
                 </div>
             </form>
             <ToastContainer />
