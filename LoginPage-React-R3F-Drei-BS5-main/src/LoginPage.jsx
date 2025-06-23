@@ -62,7 +62,7 @@ const LoginPage = () => {
             </div>
             <form action="">
                 <div className="form-group mt-3 w-75 m-auto" id='form-div'>
-                    <h2 className='text-center mt-5 m-auto'>Login</h2>
+                    <h2 className='text-center mt-5 m-auto pt-5'>Login</h2>
 
 
 
@@ -71,13 +71,13 @@ const LoginPage = () => {
                     <input type="text" id='user' value={user} onChange={handleuser} className="form-control w-25 d-inline user" placeholder="Enter your username!" />
                     <div className="password">
                         <label htmlFor="pass" className='form-label lead' id='label-pass'>Password:</label>
-                        <input type="password" id='pass' onChange={handlepass} className="form-control w-25 d-inline password" placeholder="Enter your password!" />
+                        <input type="password" id='pass' onChange={handlepass} className="form-control w-25 d-inline password user" placeholder="Enter your password!" />
                     </div>
 
 
                     <div className="check">
                         <input type="checkbox" className='form-check-input' id="check" />
-                        <label htmlFor="check" className='form-check-label ms-2' id='label'>Remember Me</label>
+                        <label htmlFor="check" className='form-check-label ms-2 text-capitalize text-dark' id='label'>Remember Me</label>
                     </div>
 
 
@@ -86,8 +86,8 @@ const LoginPage = () => {
 
 
                     {/* ==============================>Linkler<============================== */}
-                    <div className="log-alternative mt-3 w-75 m-auto">
-                        <ul className='list-group-item d-flex justify-content-center align-items-center bg-transparent '>
+                    <div className="log-alternative mt-4 w-w-100 m-auto d-flex justify-content-center align-items-center">
+                        <ul className='list-group-item d-flex bg-transparent  w-100 '>
                             <li className='list-group-item list-inline-item w-25 bg-transparent border-none'>
                                 <a href="#" className='text-decoration-none link-dark' onClick={openWindow} >Contiune with Google <FaGoogle color='gold' /> </a>
                             </li>
