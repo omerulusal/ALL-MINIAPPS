@@ -32,13 +32,21 @@ a::after {
     font-size: 40px;
 
 }
-
+.header{
+    margin-top: -14rem;
+    border-radius: 2px solid black;
+    z-index: 990;
+    position: fixed;
+    width: 80%;
+}
 .sidebar {
-    width: 345px;
+    width: 260px;
     top: 0;
     left: 0;
-    position: fixed;
-    min-height: 100vh;
+    display: inline-block;
+    position: static;
+    min-height: 100%;
+    font-size: 20px;
     /* background-color: #2E8A99; */
 }
 
@@ -75,15 +83,16 @@ a::after {
 
 
 .main-content {
-    margin-left: 340px;
+    margin-left: 260px;
     padding: 0;
-    margin-top: -1rem;
-    margin-left: 21rem;
+    margin-top: -18rem;
+    margin-left: 18rem;
 }
 
 .yapi {
     display: block;
     transition: all .2s ease-in-out;
+    margin-top: -20rem;
     cursor: pointer;
     white-space: nowrap;
 }

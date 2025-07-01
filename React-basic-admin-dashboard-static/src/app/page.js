@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Sidebar from "@/components/sidebar";
-import Structure from "@/components/structer";
+import Structure from "@/components/structure";
 import Kart from "@/components/kart";
 import Recent from "@/components/recent";
 import Customer from "@/components/customer";
