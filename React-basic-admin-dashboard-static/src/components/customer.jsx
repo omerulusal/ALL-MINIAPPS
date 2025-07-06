@@ -9,7 +9,7 @@ const customer = () => {
     return (
         <div className='main-content customer'>
             <div className="customer-top">
-                <h3>New Customer</h3>
+                <h3 className='person'>New Customer</h3>
                 <button>See all <FaArrowAltCircleRight /></button>
             </div>
             <hr className='cust-hr' />
@@ -17,12 +17,12 @@ const customer = () => {
                 <div className="custs">
                     <div className="cust-img user-wrapper">
                         <BsPersonFillGear
-                            size="40px"
+                            size="30px"
                             color="rgba(245, 245, 245, 0.703)" />
                     </div>
                     <div className="cust-person">
-                        <h3>Omer Ulusal</h3>
-                        <h3><span>CEO Expert</span></h3>
+                        <h3 className='person'>Omer Ulusal</h3>
+                        <h3 className='person'><span className='status'>CEO Expert</span></h3>
                     </div>
                     <div className="contact">
                         <BsPerson cursor={"Pointer"} />
@@ -34,12 +34,12 @@ const customer = () => {
                     {/* Cust-2 */}
                     <div className="cust-img user-wrapper">
                         <BsPersonFillGear
-                            size="40px"
+                            size="30px"
                             color="rgba(245, 245, 245, 0.703)" />
                     </div>
                     <div className="cust-person">
-                        <h3>Omer Ulusal</h3>
-                        <h3><span>CEO Expert</span></h3>
+                        <h3 className='person'>Omer Ulusal</h3>
+                        <h3 className='person'><span className='status'>CEO Expert</span></h3>
                     </div>
                     <div className="contact">
                         <BsPerson cursor={"Pointer"} />
@@ -53,12 +53,12 @@ const customer = () => {
                     {/* Cust-2 */}
                     <div className="cust-img user-wrapper">
                         <BsPersonFillGear
-                            size="40px"
+                            size="30px"
                             color="rgba(245, 245, 245, 0.703)" />
                     </div>
                     <div className="cust-person">
-                        <h3>Omer Ulusal</h3>
-                        <h3><span>CEO Expert</span></h3>
+                        <h3 className='person'>Omer Ulusal</h3>
+                        <h3 className='person'><span className='status'>CEO Expert</span></h3>
                     </div>
                     <div className="contact">
                         <BsPerson cursor={"Pointer"} />

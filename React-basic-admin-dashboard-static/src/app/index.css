@@ -40,23 +40,23 @@ a::after {
     width: 80%;
 }
 .sidebar {
-    width: 260px;
+    width: 220px;
     top: 0;
     left: 0;
     display: inline-block;
     position: static;
-    min-height: 100%;
+    min-height: 90%;
     font-size: 20px;
     /* background-color: #2E8A99; */
 }
 
 .side-active {
-    background-color: #2E8A99;
+    background-color: #44a7b6b6;
     align-items: center;
-    padding-top: 1.5rem;
+    padding-top: .5rem;
     margin-left: -10px;
     padding-left: 10px;
-    border-radius: 1rem 1rem 1rem 1rem;
+    border-radius: .1rem 1rem 1rem 1rem;
 }
 
 
@@ -150,6 +150,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -420px;
 }
 
 .card-single {
@@ -157,10 +158,10 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem;
-    margin-top: 2.5rem;
-    font-size: xx-large;
+    margin-top: .5rem;
+    font-size: large;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     transition: transform .7s ease-in-out;
     cursor: pointer;
@@ -176,14 +177,14 @@ input {
 
 .card-single .tops {
     display: block;
-    font-size: x-large;
+    font-size: large;
     padding-left: 1rem;
 }
 
 .recent {
-    margin-top: 2rem;
-    margin-left: 22rem;
-    width: 60rem;
+    margin-top: .2rem;
+    margin-left: 19rem;
+    width: 20rem;
     background-color: #2888ae1f;
     border-radius: 1rem;
     padding: 0rem 2rem;
@@ -194,6 +195,7 @@ input {
     justify-content: space-between;
     padding: 0rem 1rem;
     align-items: center;
+    font-size: 24px !important;
 }
 
 .recent-top button {
@@ -203,7 +205,7 @@ input {
     color: black;
     padding: 0.5rem 1rem;
     font-weight: bold;
-    font-size: large;
+    font-size: 12px;
     cursor: pointer;
     background-color: #3bafc1;
     transition: background-color .3s ease-in;
@@ -214,9 +216,9 @@ input {
 }
 
 hr {
-    width: 50rem;
+    width: 40rem;
     border: .1px solid black;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
     left: 0;
 }
 
@@ -230,13 +232,13 @@ thead tr th {
 }
 
 thead th {
-    font-size: 1.2em;
+    font-size: .8em;
     font-weight: lighter;
 }
 
 tbody tr td {
     padding: 0rem 5rem 0rem 0rem;
-    font-size: x-large;
+    font-size: large;
     line-height: 3.5rem;
     opacity: .8;
 }
@@ -256,10 +258,10 @@ tbody tr td span {
     background-color: #2888ae1f;
     border-radius: 1rem;
     width: max-content;
-    width: 40rem;
+    width: 30rem;
     height: auto;
-    margin-left: 77.5rem;
-    margin-top: -34rem;
+    margin-left: 64rem;
+    margin-top: -31rem;
 }
 
 .customer-top {
@@ -268,10 +270,13 @@ tbody tr td span {
     align-items: center;
     padding: 0rem 3rem;
 }
+.customer-top h3{
+    font-size: large !important;
+}
 
 .cust-hr {
     height: .6px;
-    width: 38rem;
+    width: 24rem;
 }
 
 .customer-top button {
@@ -281,7 +286,7 @@ tbody tr td span {
     color: black;
     padding: 0.5rem 1rem;
     font-weight: bold;
-    font-size: large;
+    font-size: small;
     cursor: pointer;
     background-color: #3bafc1;
     transition: background-color .3s ease-in;
@@ -303,11 +308,16 @@ tbody tr td span {
 
 .cust-person {
     display: inline;
-    width: 20rem;
+    width: 9rem;
     align-items: center;
     line-height: .3rem;
 }
-
+.person{
+    font-size: 18px !important;
+}
+.status{
+    font-size: 18px !important;
+}
 .cust-img {
     display: inline;
     width: 8rem;
@@ -323,9 +333,10 @@ tbody tr td span {
 .contact {
     display: flex;
     justify-content: space-between;
-    width: 10rem;
+    width: 5rem;
+    gap: 5px;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: .3rem;
 }
 
 .custs {

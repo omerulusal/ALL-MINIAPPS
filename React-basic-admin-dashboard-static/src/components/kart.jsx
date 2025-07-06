@@ -13,41 +13,41 @@ const kart = () => {
         <div className="main-content cards" style={divStyle}>
             <div className="card-single">
                 <div className="tops">
-                    <h1>31</h1>
+                    <h1>34</h1>
                     <span>Customers</span>
                 </div>
                 <div>
-                    <BsPeople size="50px" />
+                    <BsPeople size="24px" />
                 </div>
             </div>
 
             <div className="card-single">
                 <div className="tops">
-                    <h1>69</h1>
+                    <h1>9</h1>
                     <span>Projects</span>
                 </div>
                 <div>
-                    <FaPaperclip size="50px" />
+                    <FaPaperclip size="24px" />
                 </div>
             </div>
 
             <div className="card-single">
                 <div className="tops">
-                    <h1>52</h1>
+                    <h1>50</h1>
                     <span>Orders</span>
                 </div>
                 <div>
-                    <BsBasketFill size="50px" />
+                    <BsBasketFill size="24px" />
                 </div>
             </div>
 
             <div className="card-single">
                 <div className="tops">
-                    <h1>31</h1>
+                    <h1>11000</h1>
                     <span>Income</span>
                 </div>
                 <div>
-                    <BsBank size="50px" />
+                    <BsBank size="24px" />
                 </div>
             </div>
         </div>
