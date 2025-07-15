@@ -9,7 +9,7 @@ function Menu() {
                 {
                     MenuList.map((menuItem, key) => {
                         return (
-                            <div className="menuItem">
+                            <div className="menuItem" key={menuItem.id}>
                                 <div><img src={menuItem.image} alt="" className="img-fluid d-inline rounded" /></div>
                                 <h3 className="fdName">{menuItem.name}</h3>
                                 <h3 className="fdPrice">{menuItem.price} Tl</h3>
