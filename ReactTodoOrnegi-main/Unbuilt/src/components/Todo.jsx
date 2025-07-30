@@ -3,7 +3,7 @@ import { GrFormClose, GrFormEdit, GrFormCheckmark } from "react-icons/gr";
 import { useTodoLayerDeger } from "../context/TodoContext";
 import clsx from 'clsx';
 
-function Todo({ todo }) {
+function Todo({ todo, isSelected, onSelect }) {
     const [, dispatch] = useTodoLayerDeger();
 
     const [editable, setEditable] = useState(false);
@@ -63,6 +63,12 @@ function Todo({ todo }) {
                     // bir todo item'ının içeriğini düzenlemek veya tamamlamak için kullanılabilir bir div oluşturmaktır.
                 }
             </div>
+            <input
+                type="checkbox"
+                checked={isSelected}
+                onChange={onSelect}
+                className="todo-checkbox"
+            />
             <div className="todo-icons">
                 <GrFormClose className='todo-icon' onClick={() => removeTodo(todo.id)} />
                 {
