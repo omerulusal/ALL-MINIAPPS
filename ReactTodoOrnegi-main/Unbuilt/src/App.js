@@ -35,7 +35,7 @@ const App = () => {
   }
 
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid bg-image'>
       <div className="row row-cols-md-4 my-3 px-5">
         <form onSubmit={handleSubmit} className='todoForm'>
           <input type="text" className="form-control giris" onChange={e => setContent(e.target.value)} value={content} ref={inputRef} />
