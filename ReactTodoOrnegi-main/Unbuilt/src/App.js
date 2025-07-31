@@ -7,13 +7,29 @@ const App = () => {
   const [{ todos }, dispatch] = useTodoLayerDeger();
   // dispatch fonksiyonu, uygulamadaki veri yönetimi işlemlerinin gerçekleştirilmesi için kullanılır.
   const [content, setContent] = useState("");
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const inputRef = useRef(null);
   // useRef hook'u, bileşen içinde DOM elemanlarına veya bileşen dışındaki değişkenlere erişmek için kullanılır.
 
+  // Uygulama yüklendiğinde localStorage'dan todoları yükle
   useEffect(() => {
     inputRef.current.focus();
+    const storedTodos = localStorage.getItem('todos');
+    if (storedTodos) {
+      dispatch({
+        type: "SET_TODOS",
+        payload: JSON.parse(storedTodos),
+      })
+    }
+    setIsLoaded(true); // Yükleme tamamlandı
   }, [])
+
+  useEffect(() => {
+    if (isLoaded) { // Sadece ilk yükleme sonrası localStorage'a kaydet
+      localStorage.setItem('todos', JSON.stringify(todos));
+    }
+  }, [todos, isLoaded]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

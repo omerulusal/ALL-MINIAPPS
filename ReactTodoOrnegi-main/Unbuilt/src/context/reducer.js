@@ -48,6 +48,11 @@ const reducer = (state, action) => {
                     }
                 })
             };
+        case "SET_TODOS":
+            return {
+                ...state,
+                todos: action.payload,
+            };
         default:
             return {
                 ...state,
