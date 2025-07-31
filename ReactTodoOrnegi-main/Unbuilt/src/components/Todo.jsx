@@ -67,12 +67,12 @@ function Todo({ todo, isSelected, onSelect }) {
                 type="checkbox"
                 checked={isSelected}
                 onChange={onSelect}
-                className="todo-checkbox"
+                className="todo-checkbox form-check-input check"
             />
             <div className="todo-icons">
-                <GrFormClose className='todo-icon' onClick={() => removeTodo(todo.id)} />
+                <GrFormClose className='todo-icon' color='white' onClick={() => removeTodo(todo.id)} />
                 {
-                    editable ? <GrFormCheckmark className='todoIcon' onClick={() => {
+                    editable ? <GrFormCheckmark color='white' className='todoIcon' onClick={() => {
                         updateTodo({
                             todoId: todo.id,
                             newValue: content
@@ -81,7 +81,7 @@ function Todo({ todo, isSelected, onSelect }) {
                         setEditable(false);
                     }} />
                         :
-                        (<GrFormEdit className='todo-icon' onClick={() => setEditable(true)} />)
+                        (<GrFormEdit className='todo-icon' color='white' onClick={() => setEditable(true)} />)
                 }
             </div>
         </div>

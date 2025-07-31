@@ -1,9 +1,13 @@
 body {
-  background-image: url("../../public/bg.png");
+  background-image: url("../../public/kaos.svg");
   box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0;
-  background-color: #a7744a;
+  background-color: #090706;
 }
 
 .todoForm {
@@ -121,6 +125,12 @@ body {
   border: none;
   border-radius: 3px;
   opacity: 0.7;
+}
+.check{
+  position: relative;
+  margin-top:2%;
+  padding: 10px;
+  margin-left: 5px;
 }
 
 .bulk-actions button:hover {

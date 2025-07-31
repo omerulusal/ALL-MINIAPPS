@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTodoLayerDeger } from "./context/TodoContext";
-import TodoList from "./components/TodoList";
 import "./Style/App.css"
+const TodoList = React.lazy(() => import('./components/TodoList'));
 
 const App = () => {
   const [{ todos }, dispatch] = useTodoLayerDeger();
@@ -59,7 +59,9 @@ const App = () => {
         </form>
       </div>
       {/* Todo Listesi  */}
-      <TodoList todos={todos} />
+      <React.Suspense fallback={<div>Yukleniyor...</div>} >
+        <TodoList todos={todos} />
+      </React.Suspense>
     </div>
   );
 
